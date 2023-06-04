@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>suman portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="bg2.png" type="image/x-icon">
+
+    <style>
+        * {
+
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+
+
+        .left {
+            font-size: 2.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            /* background-color: red; */
+            /* width: 34px; */
+            font-size: 2.75rem;
+
+        }
+
+        .rightSection img {
+            /* background-color: red; */
+            width: 100%;
+            /* margin: 50 px 0; */
+        }
+
+        .secondSection {
+            max-width: 200vw;
+            margin: 75px;
+            height: 80vh;
+        }
+
+        .secondSection .btn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .secondSection h1 {
+
+            font-size: 2rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 130vh;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 40px;
+            position: relative;
+            top: -45px;
+            left: -10px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 45px;
+            width: 150px;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 50px;
+            color: grey;
+            width: 150px;
+            font-size: 10px;
+
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.7);
+        }
+
+
+
+        .purple {
+            color: rgb(170, 107, 226);
+        }
+
+        #element {
+            color: rgb(170, 107, 226);
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            height: 233px;
+        }
+
+
+        .contact-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-section h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .contact-section p {
+            font-size: 16px;
+            color: #888888;
+        }
+
+        .contact-section ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .contact-section li {
+            margin-bottom: 5px;
+        }
+
+        .contact-section a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-section ul ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .contact-section ul ul li {
+            margin-bottom: 2px;
+        }
+
+        /* about section csss */
+
+        .about-section {
+            max-width: 200vw;
+            margin: 75px;
+            height: 100vh;
+
+        }
+
+
+        .about-section h1 {
+
+            font-size: 2rem;
+        }
+
+
+        .about-section p {
+            color: rgb(213 183 240);
+    font-size: 1.5rem;
+    line-height: 1.7;
+    margin-top: 100px;
+        }
+
+        table{
+            display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Suman's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="/">Home </a></li>
+                <li><a href="#a4">About </a></li>
+                <li><a href="#a1">Education </a></li>
+                <li><a href="#a2">Skills </a></li>
+                <li><a href="#a3">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">SUMAN</span>
+
+                <div>and I am a passionate</div>
+
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg3.png" alt="">
+            </div>
+        </section>
+
+        <hr id="a4">
+
+        <section class="about-section">
+
+            <h1>About Me</h1>
+            <table>
+                <tr>
+                    <td>
+                        <img src="img3.jpeg" alt="pic" width="500" height="350">
+                    <td>
+                        
+                        <img src="WhatsApp Image 2023-06-04 at 2.13.58 PM.jpeg" alt="pic" width="500">
+
+                    </td>
+
+                    <td> <img class="img2" src="img2.jpeg" alt="" width="400" height="350"></td>
+                </tr>
+
+            </table>
+            <p>
+                HEY, Every one my name is suman i am born and brought up in Lakhisari, Bihar.
+                i am seeker for having a optimastic approach towards my life and work towards all
+                positive things with the prepareness of the obstructive things.
+                i am honest towards my word, my work as well as my actions as an individual
+                beleive in soliditary i wish upliftment for all leaving each encounter with smile.
+            </p>
+
+           
+        </section>
+        <hr id="a1">
+
+
+
+
+
+        <section class="secondSection">
+            <span class="gray">What I have done so far</span>
+            <h1>My Education</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="dev.webp" alt="">
+                    <div class="vertical-title">
+                        High School(2013-2019)
+                    </div>
+                    <div class="vertical-desc">
+                        I completed My High School from <b> D.A.V Public School Lakhisarai Bihar </b>. I joined this
+                        school in 2013 when i took the admission in class V std. I served here as a class Monitor in
+                        class VIII,IX,X . I was the Ex Cordinator and Team Leader for Environment Protection on the
+                        occasion of Teachers Day 5 sep 2018 || Science exhibition Silver Medalist
+                        || SOF( IMO) Bronze medalist
+                        10th 93.6%
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.webp" alt="">
+                    <div class="vertical-title">
+                        InterMediate (2019-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        I completed my InterMediate in 2021 from <b>Teresa International Academy Patna</b>. I joined in
+                        2019 when i took the admission in class XI. I got 84.6% in my Board Examination
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.webp" alt="">
+                    <div class="vertical-title">
+                        JEE Appearing (2019-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        My JEE days started when i took admission in <b>Allen Career Institute KOTA (RAJ.)</b>. I took
+                        coaching for the jee from this institute and i was full time classroom course student for the
+                        two year. My JEE Mains percentile is 95.7 and JEE Adv AIR was 20k
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.webp" alt="">
+                    <div class="vertical-title">
+                        Drop Year (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Due to my Bad Performance in JEE I decided to take drop. I went KOTA and joined DLP course of
+                        <b>Allen Career Institute KOTA (RAJ.)</b>. where i was 3 times DLP topper. WBJEE 329 GMR
+                        Cracked JEE M with 98.78%ile and JEE Adv 1184 EWS Rank
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.webp" alt="">
+                    <div class="vertical-title">
+                        Graduation (2022-2026)
+                    </div>
+                    <div class="vertical-desc">
+                        I am currently Persuing my B-tech in Mechanical Engineering from <b> Indian Institute of
+                            Technology (BHU),Varanasi.</b>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <hr id="a2">
+
+
+
+
+        <section class="secondSection">
+            <span class="gray">What I have learnt so far</span>
+            <h1>My Skills</h1>
+
+            <div class="button">
+                <!-- <button class="btn">Download Resume</button> -->
+                <a href="path/to/resume suman (2).pdf" download class="download-button"><button class="btn">Download
+                        Resume</button></a>
+
+            </div>
+
+            <div class="box">
+                <div class="image-container">
+                    <div class="vertical">
+                        <img class="image-top" src="htmlimg.png" alt="">
+                        <div class="vertical-title">
+                            HTML
+                        </div>
+                        <div class="vertical-desc">
+                            This is my first language i had learnt in class 8th in 2016. Learnt Many Semantic,
+                            Structure, and Formating tags.
+                            also bulid a resume project bt using only HTML tags.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="image-container">
+                    <div class="vertical">
+                        <img class="image-top" src="c.png" alt="">
+                        <div class="vertical-title">
+                            C Language
+                        </div>
+                        <div class="vertical-desc">
+                            learnt C language in my second semester of college.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="image-container">
+                    <div class="vertical">
+                        <img class="image-top" src="c++.png" alt="">
+                        <div class="vertical-title">
+                            C++
+                        </div>
+                        <div class="vertical-desc">
+                            I learnt this language and i think i pretty comfortable in this language, I am currently
+                            learning the DSA in C++.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-container">
+                    <div class="vertical">
+                        <img class="image-top" src="python.png" alt="">
+                        <div class="vertical-title">
+                            PYTHON
+                        </div>
+                        <div class="vertical-desc">
+                            i learnt this language during my end semester break . this language is very simple with
+                            variety of appication.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="image-container">
+                    <div class="vertical">
+                        <img class="image-top" src="css1img.png" alt="">
+                        <div class="vertical-title">
+                            CSS
+                        </div>
+                        <div class="vertical-desc">
+                            I am currently learning the CSS. this is my first project in css.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-container">
+                    <div class="vertical">
+                        <img class="image-top" src="quora.png" alt="">
+                        <div class="vertical-title">
+                            Content Writer
+                        </div>
+                        <div class="vertical-desc">
+                            Content writter at quora with overall 160k+ engagements of students
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+        </section>
+        <hr id="a3">
+
+
+
+
+    </main>
+    <section id="a3">
+        <footer>
+            <div class="contact-section">
+                <h3>Contact Me</h3>
+                <p>Feel free to reach out to me if you have any questions or inquiries.</p>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> Email: <a href="mailto:suman.kumar1.mec22@itbhu.ac.in">Mail</a>
+                    </li>
+                    <li><i class="fas fa-phone"></i> Phone: <a href="tel:8271980713">8271980713</a></li>
+                    <li>
+                        <i class="fab fa-twitter"></i> <a href="https://www.twitter.com/singhsumn_"
+                            target="_blank">Twitter</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/suman-kumar-a78273221/"
+                            target="_blank">LinkedIn</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-github"></i> <a href="https://github.com/sforsehlenge"
+                            target="_blank">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </section>
+
+
+
+
+
+    <!-- js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Entrepreneur', 'Web Developer', 'Content Writer', 'Coder'],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+
+</body>
+
+</html>
